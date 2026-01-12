@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/books\/addBooks\/add_books[1:8]","start":1768193990056,"end":1768193997276,"title":"features\/books\/addBooks\/add_books[1:8] 01:59:50.056-01:59:57.276 Adicionando Livro com sucesso"},{"id":2,"group":2,"content":"features\/books\/addBooks\/add_books[2:29]","start":1768193990056,"end":1768193996673,"title":"features\/books\/addBooks\/add_books[2:29] 01:59:50.056-01:59:56.673 Erro ao adicionar livro ISBN incorreto"},{"id":3,"group":3,"content":"features\/books\/listCatalog\/books_list_catalog[1:5]","start":1768193990056,"end":1768193991537,"title":"features\/books\/listCatalog\/books_list_catalog[1:5] 01:59:50.056-01:59:51.537 listar catalogo com sucesso"},{"id":4,"group":4,"content":"features\/books\/searchBook\/search_books[1:7]","start":1768193990056,"end":1768193992089,"title":"features\/books\/searchBook\/search_books[1:7] 01:59:50.056-01:59:52.089 Buscar Livro com sucesso"},{"id":5,"group":5,"content":"features\/books\/searchBook\/search_books[2:20]","start":1768193990056,"end":1768193992059,"title":"features\/books\/searchBook\/search_books[2:20] 01:59:50.056-01:59:52.059 Erro ao buscar livro"},{"id":6,"group":3,"content":"features\/books\/update\/update_books[1:9]","start":1768193991547,"end":1768194001657,"title":"features\/books\/update\/update_books[1:9] 01:59:51.547-02:00:01.657 Atualização de ISBN com sucesso"},{"id":7,"group":5,"content":"features\/books\/update\/update_books[2:28]","start":1768193992069,"end":1768194001547,"title":"features\/books\/update\/update_books[2:28] 01:59:52.069-02:00:01.547 Erro ao atualizar de ISBN sem autenticacao"},{"id":8,"group":4,"content":"features\/users\/authentication\/authentication[1:8]","start":1768193992094,"end":1768193999502,"title":"features\/users\/authentication\/authentication[1:8] 01:59:52.094-01:59:59.502 Gerar Token"},{"id":9,"group":2,"content":"features\/users\/authentication\/authentication[2:27]","start":1768193996676,"end":1768194001295,"title":"features\/users\/authentication\/authentication[2:27] 01:59:56.676-02:00:01.295 Erro ao Gerar Token"},{"id":10,"group":1,"content":"features\/users\/create\/users_create[1:14]","start":1768193997279,"end":1768193999505,"title":"features\/users\/create\/users_create[1:14] 01:59:57.279-01:59:59.505 Criando Usuário com Sucesso"},{"id":11,"group":4,"content":"features\/users\/create\/users_create[2:27]","start":1768193999507,"end":1768194000038,"title":"features\/users\/create\/users_create[2:27] 01:59:59.507-02:00:00.038 Erro ao criar Usuario com a senha fraca"},{"id":12,"group":1,"content":"features\/users\/delete\/users_delete[1:8]","start":1768193999510,"end":1768194004384,"title":"features\/users\/delete\/users_delete[1:8] 01:59:59.510-02:00:04.384 Deleteando Usuário com Sucesso"},{"id":13,"group":4,"content":"features\/users\/delete\/users_delete[2:15]","start":1768194000043,"end":1768194002880,"title":"features\/users\/delete\/users_delete[2:15] 02:00:00.043-02:00:02.880 Erro ao deletar usuario sem token"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

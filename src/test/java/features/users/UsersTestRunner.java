@@ -1,0 +1,28 @@
+package features.users;
+
+import com.intuit.karate.junit5.Karate;
+
+class UsersTestRunner {
+    
+    @Karate.Test
+    Karate testUserCreate() {
+        return Karate.run("create/users_create"
+                //"classpath:features/books/listCatalog/books_list_catalog.feature"
+                //"classpath:features/books/searchBook/search_books.feature"
+                //"classpath:features/books/addBooks/add_books.feature"
+                ).relativeTo(getClass());
+
+    }
+    @Karate.Test
+    Karate testUserAuthentication() {
+        return Karate.run("classpath:features/users/authentication/authentication.feature"
+        ).relativeTo(getClass());
+    }
+
+    @Karate.Test
+    Karate testUserDelete() {
+        return Karate.run("classpath:features/users/delete/users_delete.feature"
+        ).relativeTo(getClass());
+    }
+
+}
