@@ -52,17 +52,6 @@ O Karate carrega esse arquivo automaticamente antes da execução dos testes.
 - Java instalado
 - Maven instalado
 
-### **Executar todos os testes**
-
-mvn test
-
-### **Executar uma feature específica**
-
-mvn test -Dkarate.options="classpath:features/books/listCatalog"
-
-## **Executar por tag**
-
-mvn test -Dkarate.options="--tags @sucesso"
 
 ## 🧪 Cenários Cobertos
 
