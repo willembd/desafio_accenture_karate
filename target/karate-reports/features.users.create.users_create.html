@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-12 02:13:48 AM</div>
+    <div>2026-01-12 12:45:43 PM</div>
   </div>
 </div>
 
@@ -58,7 +58,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             <a href="#[1:14]"><span>[1:14]</span> <span>Criando Usuário com Sucesso</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:27]"><span>[2:27]</span> <span>Erro ao criar Usuario com a senha fraca</span></a>
+            <a href="#[2:28]"><span>[2:28]</span> <span>Erro ao criar Usuario com a senha fraca</span></a>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2029</span>
+              <span>ms:</span>&nbsp;<span>1165</span>
             </div>
           </div>
           <div class="step-row">
@@ -116,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">02:13:44.340 karate.env system property was: dev 
+  <div class="preformatted" data-parent="0.4">12:45:37.546 karate.env system property was: dev 
 </div>   
 
   
@@ -223,7 +223,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2022</div>
+    <div class="time-cell passed">1154</div>
   </div>
 
    
@@ -232,7 +232,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">02:13:44.348 request:
+  <div class="preformatted" data-parent="0.18">12:45:37.554 request:
 1 &gt; POST https://bookstore.demoqa.com/Account/v1/User
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 80
@@ -240,18 +240,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;userName&quot;:&quot;NomeID3a2d18b9-e237-4478-82f5-4d2dae397d3e&quot;,&quot;password&quot;:&quot;P@ssword2&quot;}
+{&quot;userName&quot;:&quot;NomeIDc8ad7246-33aa-4512-aa0f-74dd07257f99&quot;,&quot;password&quot;:&quot;P@ssword2&quot;}
 
-02:13:46.367 response time in milliseconds: 2019
+12:45:38.704 response time in milliseconds: 1150
 1 &lt; 201
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:44 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 116
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
-1 &lt; ETag: W/&quot;74-z0F29P+UeomPd7cKzmfuJAnR0OQ&quot;
-{&quot;userID&quot;:&quot;4ab8d947-fdea-4a84-97dd-ed6e1e971bea&quot;,&quot;username&quot;:&quot;NomeID3a2d18b9-e237-4478-82f5-4d2dae397d3e&quot;,&quot;books&quot;:[]}
+1 &lt; ETag: W/&quot;74-dYfDa5RmL+p5BpXBvK6nkRXiito&quot;
+{&quot;userID&quot;:&quot;66a33de7-9783-4e22-912b-07b3d2689b10&quot;,&quot;username&quot;:&quot;NomeIDc8ad7246-33aa-4512-aa0f-74dd07257f99&quot;,&quot;books&quot;:[]}
 
 </div>   
 
@@ -293,8 +293,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:features/users/create/users_schema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def user_id = response.userID</span>
@@ -321,14 +349,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def user_password = usuario.password</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -349,14 +377,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.23">
-      <div class="step-ref passed">23</div>
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print user_name</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -365,7 +393,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.23">02:13:46.372 [print] NomeID3a2d18b9-e237-4478-82f5-4d2dae397d3e 
+  <div class="preformatted" data-parent="0.24">12:45:38.715 [print] NomeIDc8ad7246-33aa-4512-aa0f-74dd07257f99 
 </div>   
 
   
@@ -374,29 +402,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:27]">
+          <div class="scenario-heading" id="[2:28]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:27]</span>
+                Scenario: <span>[2:28]</span>
                 <span class="scenario-name">Erro ao criar Usuario com a senha fraca</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>518</span>
+              <span>ms:</span>&nbsp;<span>514</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:27]bg">
+            <div class="step-container" id="[2:28]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:27]bg"><div>
+          <div data-parent="[2:28]bg"><div>
   
 
   
@@ -409,7 +437,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user_name = &#39;NomeID&#39; + java.util.UUID.randomUUID()</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -418,14 +446,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">02:13:46.382 karate.env system property was: dev 
+  <div class="preformatted" data-parent="0.4">12:45:38.015 karate.env system property was: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[2:27]bg"><div>
+          <div data-parent="[2:28]bg"><div>
   
 
   
@@ -438,7 +466,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def usuario =</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -462,39 +490,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def user_name = &#39;NomeID&#39; + java.util.UUID.randomUUID()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.29">
       <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/Account/v1/User&#39;</span>
+        <span>*</span>&nbsp;<span>def user_name = &#39;NomeID&#39; + java.util.UUID.randomUUID()</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -522,7 +522,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def usuario =</span>
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/Account/v1/User&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -530,7 +530,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
    
   
-  <div class="preformatted" data-parent="0.30">{
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usuario =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.31">{
   &quot;userName&quot;: &quot;#(user_name)&quot;,
    &quot;password&quot;: &quot;123&quot;
 }</div>
@@ -549,8 +577,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request usuario</span>
@@ -577,14 +605,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">513</div>
+    <div class="time-cell passed">508</div>
   </div>
 
    
@@ -593,7 +621,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38">02:13:46.389 request:
+  <div class="preformatted" data-parent="0.39">12:45:38.021 request:
 1 &gt; POST https://bookstore.demoqa.com/Account/v1/User
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 74
@@ -601,12 +629,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;userName&quot;:&quot;NomeIDb04f6460-dfdf-4070-994e-9b0375acf22b&quot;,&quot;password&quot;:&quot;123&quot;}
+{&quot;userName&quot;:&quot;NomeIDba478262-f74b-4389-bde8-351738e6f1dd&quot;,&quot;password&quot;:&quot;123&quot;}
 
-02:13:46.901 response time in milliseconds: 511
+12:45:38.528 response time in milliseconds: 505
 1 &lt; 400
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:45 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 230
 1 &lt; Connection: keep-alive
@@ -626,14 +654,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:features/users/create/users_schema_error.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

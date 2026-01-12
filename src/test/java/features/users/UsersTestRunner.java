@@ -7,9 +7,6 @@ class UsersTestRunner {
     @Karate.Test
     Karate testUserCreate() {
         return Karate.run("create/users_create"
-                //"classpath:features/books/listCatalog/books_list_catalog.feature"
-                //"classpath:features/books/searchBook/search_books.feature"
-                //"classpath:features/books/addBooks/add_books.feature"
                 ).relativeTo(getClass());
 
     }

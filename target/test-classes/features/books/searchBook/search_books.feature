@@ -24,5 +24,6 @@ Feature: Buscar livro por ISBN
         And param ISBN = '00000'
         When method get
         Then status 400
+        And match response.message == "ISBN supplied is not available in Books Collection!"
 
 

@@ -17,6 +17,7 @@ Feature: Criação de Usuário
             And request usuario
             When method post
             Then status 201
+            And match response == read('classpath:features/users/create/users_schema.json')
 
             * def user_id = response.userID
             * def user_password = usuario.password
@@ -37,3 +38,4 @@ Feature: Criação de Usuário
             And request usuario
             When method post
             Then status 400
+            And match response == read('classpath:features/users/create/users_schema_error.json')

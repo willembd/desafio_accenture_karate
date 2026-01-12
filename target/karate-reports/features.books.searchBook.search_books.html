@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-12 02:13:45 AM</div>
+    <div>2026-01-12 12:45:39 PM</div>
   </div>
 </div>
 
@@ -84,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2420</span>
+              <span>ms:</span>&nbsp;<span>1767</span>
             </div>
           </div>
           <div class="step-row">
@@ -107,7 +107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>call read(&#39;classpath:features/books/listCatalog/books_list_catalog.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1847</div>
+    <div class="time-cell passed">1205</div>
   </div>
 
    
@@ -126,7 +126,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">features.books.listCatalog.books_list_catalog</div>
       </div>
-      <div class="time-cell passed">1822</div>
+      <div class="time-cell passed">1175</div>
     </div>
     <div>
       <div><div>
@@ -151,7 +151,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.6">02:13:36.847 karate.env system property was: dev 
+  <div class="preformatted" data-parent="0.4.0.call.0.6">12:45:30.667 karate.env system property was: dev 
 </div>   
 
   
@@ -199,7 +199,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1811</div>
+    <div class="time-cell passed">1132</div>
   </div>
 
    
@@ -208,7 +208,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.8">02:13:37.160 request:
+  <div class="preformatted" data-parent="0.4.0.call.0.8">12:45:31.005 request:
 1 &gt; GET https://bookstore.demoqa.com/BookStore/v1/Books
 1 &gt; Host: bookstore.demoqa.com
 1 &gt; Connection: Keep-Alive
@@ -216,10 +216,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:13:38.719 response time in milliseconds: 1557
+12:45:31.854 response time in milliseconds: 829
 1 &lt; 200
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:36 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:30 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 4514
 1 &lt; Connection: keep-alive
@@ -246,7 +246,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -267,8 +267,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:features/books/listCatalog/books_list_catalog_schema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def books = response.books</span>
@@ -295,14 +323,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -311,7 +339,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.12">02:13:38.731 [print] {
+  <div class="preformatted" data-parent="0.4.0.call.0.13">12:45:31.907 [print] {
   &quot;books&quot;: [
     {
       &quot;isbn&quot;: &quot;9781449325862&quot;,
@@ -484,7 +512,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param ISBN = books[0].isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -512,7 +540,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">546</div>
+    <div class="time-cell passed">553</div>
   </div>
 
    
@@ -521,7 +549,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">02:13:38.750 request:
+  <div class="preformatted" data-parent="0.12">12:45:31.920 request:
 1 &gt; GET https://bookstore.demoqa.com/BookStore/v1/Book?ISBN=9781449325862
 1 &gt; Host: bookstore.demoqa.com
 1 &gt; Connection: Keep-Alive
@@ -529,10 +557,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:13:39.293 response time in milliseconds: 543
+12:45:32.468 response time in milliseconds: 547
 1 &lt; 200
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:37 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:31 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 549
 1 &lt; Connection: keep-alive
@@ -587,7 +615,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.isbn == books[0].isbn</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -624,7 +652,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.16">02:13:39.306 [print] 200 
+  <div class="preformatted" data-parent="0.16">12:45:32.475 [print] 200 
 </div>   
 
   
@@ -653,7 +681,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">02:13:39.309 [print] {
+  <div class="preformatted" data-parent="0.17">12:45:32.476 [print] {
   &quot;isbn&quot;: &quot;9781449325862&quot;,
   &quot;title&quot;: &quot;Git Pocket Guide&quot;,
   &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
@@ -685,7 +713,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1664</span>
+              <span>ms:</span>&nbsp;<span>1712</span>
             </div>
           </div>
           <div class="step-row">
@@ -708,7 +736,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>call read(&#39;classpath:features/books/listCatalog/books_list_catalog.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1130</div>
+    <div class="time-cell passed">1204</div>
   </div>
 
    
@@ -727,7 +755,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">features.books.listCatalog.books_list_catalog</div>
       </div>
-      <div class="time-cell passed">1102</div>
+      <div class="time-cell passed">1177</div>
     </div>
     <div>
       <div><div>
@@ -752,7 +780,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.6">02:13:36.847 karate.env system property was: dev 
+  <div class="preformatted" data-parent="0.4.0.call.0.6">12:45:30.667 karate.env system property was: dev 
 </div>   
 
   
@@ -772,7 +800,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &quot;/BookStore/v1/Books&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -800,7 +828,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1087</div>
+    <div class="time-cell passed">1134</div>
   </div>
 
    
@@ -809,7 +837,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.8">02:13:37.160 request:
+  <div class="preformatted" data-parent="0.4.0.call.0.8">12:45:31.005 request:
 1 &gt; GET https://bookstore.demoqa.com/BookStore/v1/Books
 1 &gt; Host: bookstore.demoqa.com
 1 &gt; Connection: Keep-Alive
@@ -817,10 +845,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:13:37.995 response time in milliseconds: 833
+12:45:31.853 response time in milliseconds: 829
 1 &lt; 200
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:36 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:30 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 4514
 1 &lt; Connection: keep-alive
@@ -847,7 +875,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -868,14 +896,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def books = response.books</span>
+        <span>And</span>&nbsp;<span>match response == read(&#39;classpath:features/books/listCatalog/books_list_catalog_schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">23</div>
   </div>
 
    
@@ -900,6 +928,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def books = response.books</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
@@ -912,7 +968,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.12">02:13:38.013 [print] {
+  <div class="preformatted" data-parent="0.4.0.call.0.13">12:45:31.907 [print] {
   &quot;books&quot;: [
     {
       &quot;isbn&quot;: &quot;9781449325862&quot;,
@@ -1113,7 +1169,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">531</div>
+    <div class="time-cell passed">505</div>
   </div>
 
    
@@ -1122,7 +1178,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.25">02:13:38.026 request:
+  <div class="preformatted" data-parent="0.25">12:45:31.918 request:
 1 &gt; GET https://bookstore.demoqa.com/BookStore/v1/Book?ISBN=00000
 1 &gt; Host: bookstore.demoqa.com
 1 &gt; Connection: Keep-Alive
@@ -1130,10 +1186,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:13:38.546 response time in milliseconds: 517
+12:45:32.418 response time in milliseconds: 500
 1 &lt; 400
 1 &lt; Server: nginx/1.17.10 (Ubuntu)
-1 &lt; Date: Mon, 12 Jan 2026 05:13:36 GMT
+1 &lt; Date: Mon, 12 Jan 2026 15:45:31 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 79
 1 &lt; Connection: keep-alive
@@ -1161,6 +1217,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       </div>
     </div>
     <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;ISBN supplied is not available in Books Collection!&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

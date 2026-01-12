@@ -17,3 +17,4 @@ Feature: Deleteando Usuário
         And path '/Account/v1/User/', user_id
         When method delete
         Then status 401
+        And match response == read('classpath:features/users/delete/users_delete_schema_error.json')

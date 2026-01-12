@@ -25,6 +25,7 @@ Feature: Adicionar Livro ao Usuario
         And request body
         When method post
         Then status 201
+        And match response == read('classpath:features/books/addBooks/add_books_schema.json')
 
     Scenario: Erro ao adicionar livro ISBN incorreto
         Given url baseUrl
@@ -46,4 +47,6 @@ Feature: Adicionar Livro ao Usuario
         And request body
         When method post
         Then status 400
+        And match response == read('classpath:features/books/addBooks/add_books_schema_error.json')
+
 

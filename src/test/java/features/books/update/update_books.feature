@@ -24,6 +24,7 @@ Feature: Atualizar ISBN do Livro
         And request body
         When method put
         Then status 200
+        And match response == read('classpath:features/books/update/update_books_schema.json')
 
     Scenario: Erro ao atualizar de ISBN sem autenticacao
 
@@ -43,5 +44,6 @@ Feature: Atualizar ISBN do Livro
         And request body
         When method put
         Then status 401
+        And match response == read('classpath:features/books/update/update_books_schema_error.json')
 
 
