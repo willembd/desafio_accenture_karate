@@ -13,7 +13,7 @@ A suíte cobre fluxos de usuário e livros, incluindo cenários de sucesso e err
 - Logback
 
 ## 📂 Estrutura do Projeto
-
+```
 src
 └── test
     └── java
@@ -27,7 +27,7 @@ src
                 ├── authentication
                 ├── create
                 └── delete
-
+```
 
 - **users:** criação de usuário (post), autenticação (token) e exclusão (delete)
 - **books:** catálogo, busca por ISBN, adição e atualização de livros
