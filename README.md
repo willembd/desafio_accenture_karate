@@ -16,18 +16,18 @@ A suíte cobre fluxos de usuário e livros, incluindo cenários de sucesso e err
 
 src
 └── test
-└── java
-└── features
-├── books
-│   ├── addBooks
-│   ├── listCatalog
-│   ├── searchBook
-│   └── update
-├── users
-│   ├── authentication
-│   ├── create
-│   └── delete
-└── karate-config.js
+    └── java
+        └── features
+            ├── books
+            │   ├── addBooks
+            │   ├── listCatalog
+            │   ├── searchBook
+            │   └── update
+            └── users
+                ├── authentication
+                ├── create
+                └── delete
+
 
 - **users:** criação de usuário (post), autenticação (token) e exclusão (delete)
 - **books:** catálogo, busca por ISBN, adição e atualização de livros
